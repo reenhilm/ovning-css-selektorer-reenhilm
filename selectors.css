@@ -56,25 +56,42 @@ div > p {
 }
 
 /* 12. Ge alla em i den fjärde section-en med class="fourth" en 'text-decoration: underline;' */
-
+.fourth em {
+    text-decoration: underline;
+}
 
 /* 13. Gör så att <h1> elementet får färgen blå när musen är över elementet (:hover) */
-
+h1:hover {
+    color:#0000ff;
+}
 
 /* 14. Gör så att alla besökta <a> element får färgen grå (:visited) */
-
+a:visited {
+    color: gray;
+}
 
 /* 15. Alla inmatningsfält (input) av typ 'text' ska ha grå bakgrund */
-
+input[type="text"] {
+    background-color: gray;
+}
 
 /* 16. Alla checkboxrutor som är 'checked' ska får en vänstermarginal på 50px (margin-left: 50px) */
-
+input:checked {
+    margin-left: 50px
+}
 
 /* 17. Alla section som innehåller ett h2 ska få en grön ram */
-
+section:has(h2) {
+    border: 2px solid green;
+}
 
 /* 18. Använd :is för att välja alla <h1>, <h2>, och <h3> element och sätt en rosa bakgrundsfärg */
-
+:is(h1, h2, h3) {
+    background-color: pink;
+}
 
 /* 19. Använd :where för att ge alla <p> element utan extra vikt en färg */
+:where(p) {
+    color: red;
+}
 
